@@ -1,0 +1,101 @@
+canonical_system_id,canonical_host,n_planets,multiplicity_class,has_periods,has_masses,has_radii,has_eccentricity_constraints,has_transit_epochs,has_inclinations,is_transiting,is_rv_detected,data_completeness,dynamical_reconstruction_confidence,tier
+k2-138-9b597f96,K2-138,6,high_multiplicity,True,True,True,True,True,True,True,True,1.0,100.0,A
+kepler-11-a804d45d,Kepler-11,6,high_multiplicity,True,True,True,True,True,True,True,True,1.0,100.0,A
+hd-23472-e86bae32,HD 23472,5,five_plus_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+kepler-102-24032780,Kepler-102,5,five_plus_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+k2-285-00ad3606,K2-285,4,four_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+k2-32-6473c62f,K2-32,4,four_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+koi-94-21005ee1,KOI-94,4,four_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+kepler-107-dfa6195c,Kepler-107,4,four_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+kepler-223-5034e4ad,Kepler-223,4,four_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+toi-561-7bcef113,TOI-561,4,four_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+epic-249893012-28a06903,EPIC 249893012,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+hd-136352-c1313ca8,HD 136352,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+hd-224018-9174bb53,HD 224018,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+hd-28109-fe7669e7,HD 28109,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+hr-858-75ed2b6a,HR 858,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+k2-19-7509bd0c,K2-19,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+k2-233-30fcc83a,K2-233,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+k2-3-f9f9522f,K2-3,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+kepler-18-45f834f0,Kepler-18,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+kepler-30-898c08ec,Kepler-30,3,three_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+kepler-47-940d3524,Kepler-47,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-125-5f95c1d3,TOI-125,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1260-fe74ce0f,TOI-1260,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-201-72b47994,TOI-201,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-4504-69f769e1,TOI-4504,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-451-f0e5528b,TOI-451,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-7510-ab770dbe,TOI-7510,3,three_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+corot-24-578ace9f,CoRoT-24,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+epic-220674823-bfce2015,EPIC 220674823,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+hd-106315-76b87be3,HD 106315,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+hd-152843-5cc62c08,HD 152843,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+hd-15337-96d224e2,HD 15337,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+hd-260655-de0ed188,HD 260655,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+hd-73583-a10f6716,HD 73583,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+k2-141-ce8e83b8,K2-141,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+k2-146-e6d5b8fe,K2-146,2,two_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+k2-199-1a330682,K2-199,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+k2-290-30509840,K2-290,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+k2-36-5a01290b,K2-36,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+k2-38-1cbbf840,K2-38,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+koi-1599-e6a6c6f5,KOI-1599,2,two_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+kepler-101-e928ab4f,Kepler-101,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+kepler-103-1d3f3a65,Kepler-103,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+kepler-109-7c43c916,Kepler-109,2,two_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+kepler-117-74cc0964,Kepler-117,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+kepler-1705-bbbc8fd9,Kepler-1705,2,two_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+kepler-1972-9ae30050,Kepler-1972,2,two_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+kepler-278-795fcaa7,Kepler-278,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+kepler-323-fc3d3406,Kepler-323,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+kepler-391-4c8a8403,Kepler-391,2,two_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+lhs-1140-db8448db,LHS 1140,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+ltt-3780-389ce844,LTT 3780,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1064-2237c345,TOI-1064,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1238-3805c7ec,TOI-1238,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1347-f9ddf51e,TOI-1347,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1408-7b60d448,TOI-1408,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1422-18747eb4,TOI-1422,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1438-aa61b9c9,TOI-1438,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1453-a60c4c24,TOI-1453,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1468-9c3c3a1a,TOI-1468,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1470-a771397e,TOI-1470,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1472-8e73c68c,TOI-1472,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1533-a44719a9,TOI-1533,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1670-53b542ed,TOI-1670,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-1803-d20a769c,TOI-1803,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-2000-4a2b8adf,TOI-2000,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-2095-7fbf4600,TOI-2095,2,two_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+toi-2134-561a0986,TOI-2134,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-216-8ae23332,TOI-216,2,two_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+toi-2322-d4f6b783,TOI-2322,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-2525-4532bc5c,TOI-2525,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-286-ec519f8c,TOI-286,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-406-aacaa7e7,TOI-406,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-4336-a-9b214aad,TOI-4336 A,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-4342-3d382bc5,TOI-4342,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-4495-1e4031f8,TOI-4495,2,two_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+toi-4600-3715cad1,TOI-4600,2,two_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+toi-5398-fae01ef6,TOI-5398,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-5788-329c9ded,TOI-5788,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-6054-e86d5839,TOI-6054,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-776-d45ff9d4,TOI-776,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-791-5bb3208a,TOI-791,2,two_planet,True,True,True,True,True,True,True,False,1.0,100.0,A
+toi-815-d1ec13b8,TOI-815,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+toi-836-9425b7e8,TOI-836,2,two_planet,True,True,True,True,True,True,True,True,1.0,100.0,A
+k2-266-768e814d,K2-266,4,four_planet,True,True,True,True,True,True,True,False,0.9583,98.5,A
+toi-431-84c23716,TOI-431,3,three_planet,True,True,False,True,True,True,True,True,0.9444,98.1,A
+l-98-59-988ec486,L 98-59,5,five_plus_planet,True,True,False,True,True,True,True,True,0.9333,97.7,A
+toi-5624-8591da48,TOI-5624,5,five_plus_planet,True,True,False,True,True,True,True,True,0.9333,97.7,A
+hd-3167-711b9d9a,HD 3167,4,four_planet,True,True,False,True,True,True,True,True,0.9167,97.1,A
+toi-4010-d5fbce8c,TOI-4010,4,four_planet,True,True,False,True,True,True,True,True,0.9167,97.1,A
+gj-143-6cabe4a5,GJ 143,2,two_planet,True,True,True,True,True,True,True,True,0.9167,97.1,A
+kepler-553-3cfae55a,Kepler-553,2,two_planet,True,True,True,True,True,True,True,True,0.9167,97.1,A
+ltt-1445-a-b1d2aec4,LTT 1445 A,2,two_planet,True,True,True,True,True,True,True,True,0.9167,97.1,A
+toi-1836-63d3887a,TOI-1836,2,two_planet,True,True,True,True,True,True,True,True,0.9167,97.1,A
+toi-4311-a9805ac9,TOI-4311,2,two_planet,True,True,True,True,True,True,True,True,0.9167,97.1,A
+wasp-148-3bfb8a24,WASP-148,2,two_planet,True,True,False,True,True,True,True,True,0.9167,97.1,A
+kepler-10-c99ace7f,Kepler-10,3,three_planet,True,True,False,True,True,True,True,True,0.8889,96.1,A
+kepler-25-7b039816,Kepler-25,3,three_planet,True,True,False,True,True,True,True,True,0.8889,96.1,A
+toi-1266-33712de8,TOI-1266,3,three_planet,True,True,False,True,True,True,True,True,0.8889,96.1,A
+wasp-132-09fc9d4d,WASP-132,3,three_planet,True,True,False,True,True,True,True,True,0.8889,96.1,A

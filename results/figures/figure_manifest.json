@@ -1,0 +1,20 @@
+{
+  "source_summary": {
+    "archive_rows_surveyed": 98192,
+    "confirmed_planets": 6354,
+    "host_systems": 4764,
+    "multi_planet_systems": 1058,
+    "high_multiplicity_systems": 14,
+    "tier_a_systems": 271,
+    "tier_b_systems": 760,
+    "near_commensurate_pairs": 261,
+    "archives": 1,
+    "data_last_synchronised": "2026-08-24T20:22:17.304751+00:00",
+    "method_note": "Counts derive from timestamped live TAP responses; archive rows include repeated literature solutions in ps."
+  },
+  "figures": [
+    "multiplicity.png",
+    "period_ratios.png",
+    "radius_period.png"
+  ]
+}

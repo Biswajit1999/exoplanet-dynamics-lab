@@ -1,0 +1,14 @@
+{
+  "archive": "NASA Exoplanet Archive",
+  "table": "CUMULATIVE",
+  "query": "select kepid,kepoi_name,kepler_name,koi_disposition,koi_pdisposition,koi_period,koi_time0bk,koi_depth,koi_duration,koi_prad,koi_steff,koi_srad,koi_kepmag,ra,dec from CUMULATIVE",
+  "target": "population survey",
+  "retrieval_timestamp_utc": "2026-08-24T20:22:07.681952+00:00",
+  "row_count": 9564,
+  "source_url_or_identifier": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ckepoi_name%2Ckepler_name%2Ckoi_disposition%2Ckoi_pdisposition%2Ckoi_period%2Ckoi_time0bk%2Ckoi_depth%2Ckoi_duration%2Ckoi_prad%2Ckoi_steff%2Ckoi_srad%2Ckoi_kepmag%2Cra%2Cdec+from+CUMULATIVE&format=csv",
+  "dataset_version": "live TAP response; timestamped snapshot",
+  "checksum_sha256": "9884a6392b199e687a560cb290e1d00c74fee158b0bdd4e5c687cfcedf233d2f",
+  "doi_reference": "10.26133/NEA12",
+  "processing_version": "exodynamics-0.1.0",
+  "output_path": "C:/Users/biswa/Documents/New project/exoplanet-dynamics-lab/data/raw/cumulative.csv"
+}

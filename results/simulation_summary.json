@@ -1,0 +1,11 @@
+{
+  "system": "K2-138",
+  "delta_E_over_E": 2.2817616705670778e-08,
+  "delta_L_over_L": 1.1691817692235818e-14,
+  "integration_time_years": 10.0,
+  "time_step_years": 6.442409308692676e-05,
+  "integrator": "whfast",
+  "number_of_steps": 155221,
+  "wall_time_seconds": 0.4322918998077512,
+  "passed_tolerance": true
+}

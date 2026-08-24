@@ -1,0 +1,14 @@
+{
+  "archive": "NASA Exoplanet Archive",
+  "table": "Q1_Q17_DR25_TCE",
+  "query": "select kepid,tce_plnt_num,tce_period,tce_time0bk,tce_duration,tce_depth,tce_prad,tce_maxmesd,tce_rogue_flag from Q1_Q17_DR25_TCE",
+  "target": "population survey",
+  "retrieval_timestamp_utc": "2026-08-24T20:22:17.304751+00:00",
+  "row_count": 34032,
+  "source_url_or_identifier": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ctce_plnt_num%2Ctce_period%2Ctce_time0bk%2Ctce_duration%2Ctce_depth%2Ctce_prad%2Ctce_maxmesd%2Ctce_rogue_flag+from+Q1_Q17_DR25_TCE&format=csv",
+  "dataset_version": "live TAP response; timestamped snapshot",
+  "checksum_sha256": "e532ddf7b1bf17d51be48922d9dfc6e0c6f9931ac00d59d8d1c363867d486c81",
+  "doi_reference": "10.26133/NEA12",
+  "processing_version": "exodynamics-0.1.0",
+  "output_path": "C:/Users/biswa/Documents/New project/exoplanet-dynamics-lab/data/raw/q1_q17_dr25_tce.csv"
+}

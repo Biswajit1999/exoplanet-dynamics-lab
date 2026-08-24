@@ -1,0 +1,14 @@
+{
+  "archive": "NASA Exoplanet Archive",
+  "table": "toi",
+  "query": "select tid,toi,toipfx,pl_pnum,tfopwg_disp,pl_orbper,pl_tranmid,pl_trandurh,pl_trandep,pl_rade,ra,dec,st_tmag,st_teff,st_logg,st_rad from toi",
+  "target": "population survey",
+  "retrieval_timestamp_utc": "2026-08-24T20:21:57.349531+00:00",
+  "row_count": 8136,
+  "source_url_or_identifier": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+tid%2Ctoi%2Ctoipfx%2Cpl_pnum%2Ctfopwg_disp%2Cpl_orbper%2Cpl_tranmid%2Cpl_trandurh%2Cpl_trandep%2Cpl_rade%2Cra%2Cdec%2Cst_tmag%2Cst_teff%2Cst_logg%2Cst_rad+from+toi&format=csv",
+  "dataset_version": "live TAP response; timestamped snapshot",
+  "checksum_sha256": "b591817f958fb84b35e0dd59bff788378bc49e5e09ee13d43bfd9f6e20cf6799",
+  "doi_reference": "10.26133/NEA12",
+  "processing_version": "exodynamics-0.1.0",
+  "output_path": "C:/Users/biswa/Documents/New project/exoplanet-dynamics-lab/data/raw/toi.csv"
+}

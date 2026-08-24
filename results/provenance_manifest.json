@@ -1,0 +1,72 @@
+[
+  {
+    "archive": "NASA Exoplanet Archive",
+    "table": "CUMULATIVE",
+    "query": "select kepid,kepoi_name,kepler_name,koi_disposition,koi_pdisposition,koi_period,koi_time0bk,koi_depth,koi_duration,koi_prad,koi_steff,koi_srad,koi_kepmag,ra,dec from CUMULATIVE",
+    "target": "population survey",
+    "retrieval_timestamp_utc": "2026-08-24T20:22:07.681952+00:00",
+    "row_count": 9564,
+    "source_url_or_identifier": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ckepoi_name%2Ckepler_name%2Ckoi_disposition%2Ckoi_pdisposition%2Ckoi_period%2Ckoi_time0bk%2Ckoi_depth%2Ckoi_duration%2Ckoi_prad%2Ckoi_steff%2Ckoi_srad%2Ckoi_kepmag%2Cra%2Cdec+from+CUMULATIVE&format=csv",
+    "dataset_version": "live TAP response; timestamped snapshot",
+    "checksum_sha256": "9884a6392b199e687a560cb290e1d00c74fee158b0bdd4e5c687cfcedf233d2f",
+    "doi_reference": "10.26133/NEA12",
+    "processing_version": "exodynamics-0.1.0",
+    "output_path": "C:/Users/biswa/Documents/New project/exoplanet-dynamics-lab/data/raw/cumulative.csv"
+  },
+  {
+    "archive": "NASA Exoplanet Archive",
+    "table": "ps",
+    "query": "select pl_name,hostname,default_flag,sy_pnum,discoverymethod,disc_year,disc_facility,pl_orbper,pl_orbpererr1,pl_orbpererr2,pl_orbsmax,pl_rade,pl_radeerr1,pl_radeerr2,pl_bmasse,pl_bmasseerr1,pl_bmasseerr2,pl_orbeccen,pl_orbeccenerr1,pl_orbeccenerr2,pl_orbincl,pl_tranmid,pl_tranmiderr1,pl_tranmiderr2,tran_flag,rv_flag,ttv_flag,st_mass,st_rad,st_teff,ra,dec,sy_dist,gaia_dr3_id,tic_id,hd_name,hip_name,releasedate,rowupdate from ps",
+    "target": "population survey",
+    "retrieval_timestamp_utc": "2026-08-24T20:21:46.065768+00:00",
+    "row_count": 40106,
+    "source_url_or_identifier": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Cdefault_flag%2Csy_pnum%2Cdiscoverymethod%2Cdisc_year%2Cdisc_facility%2Cpl_orbper%2Cpl_orbpererr1%2Cpl_orbpererr2%2Cpl_orbsmax%2Cpl_rade%2Cpl_radeerr1%2Cpl_radeerr2%2Cpl_bmasse%2Cpl_bmasseerr1%2Cpl_bmasseerr2%2Cpl_orbeccen%2Cpl_orbeccenerr1%2Cpl_orbeccenerr2%2Cpl_orbincl%2Cpl_tranmid%2Cpl_tranmiderr1%2Cpl_tranmiderr2%2Ctran_flag%2Crv_flag%2Cttv_flag%2Cst_mass%2Cst_rad%2Cst_teff%2Cra%2Cdec%2Csy_dist%2Cgaia_dr3_id%2Ctic_id%2Chd_name%2Chip_name%2Creleasedate%2Crowupdate+from+ps&format=csv",
+    "dataset_version": "live TAP response; timestamped snapshot",
+    "checksum_sha256": "094e4ec6f17625b33c9675ed873a08c533f6bf46e2a69cbcc5d25dda394db3e1",
+    "doi_reference": "10.26133/NEA12",
+    "processing_version": "exodynamics-0.1.0",
+    "output_path": "C:/Users/biswa/Documents/New project/exoplanet-dynamics-lab/data/raw/ps.csv"
+  },
+  {
+    "archive": "NASA Exoplanet Archive",
+    "table": "pscomppars",
+    "query": "select pl_name,hostname,sy_pnum,pl_orbper,pl_orbsmax,pl_rade,pl_bmasse,pl_orbeccen,st_mass,st_rad,ra,dec,sy_dist from pscomppars",
+    "target": "population survey",
+    "retrieval_timestamp_utc": "2026-08-24T20:21:53.606677+00:00",
+    "row_count": 6354,
+    "source_url_or_identifier": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Csy_pnum%2Cpl_orbper%2Cpl_orbsmax%2Cpl_rade%2Cpl_bmasse%2Cpl_orbeccen%2Cst_mass%2Cst_rad%2Cra%2Cdec%2Csy_dist+from+pscomppars&format=csv",
+    "dataset_version": "live TAP response; timestamped snapshot",
+    "checksum_sha256": "c9795d9182a382e8f2ecc786e62962464dd681e3249643dabb7b5723e1db8efd",
+    "doi_reference": "10.26133/NEA12",
+    "processing_version": "exodynamics-0.1.0",
+    "output_path": "C:/Users/biswa/Documents/New project/exoplanet-dynamics-lab/data/raw/pscomppars.csv"
+  },
+  {
+    "archive": "NASA Exoplanet Archive",
+    "table": "Q1_Q17_DR25_TCE",
+    "query": "select kepid,tce_plnt_num,tce_period,tce_time0bk,tce_duration,tce_depth,tce_prad,tce_maxmesd,tce_rogue_flag from Q1_Q17_DR25_TCE",
+    "target": "population survey",
+    "retrieval_timestamp_utc": "2026-08-24T20:22:17.304751+00:00",
+    "row_count": 34032,
+    "source_url_or_identifier": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ctce_plnt_num%2Ctce_period%2Ctce_time0bk%2Ctce_duration%2Ctce_depth%2Ctce_prad%2Ctce_maxmesd%2Ctce_rogue_flag+from+Q1_Q17_DR25_TCE&format=csv",
+    "dataset_version": "live TAP response; timestamped snapshot",
+    "checksum_sha256": "e532ddf7b1bf17d51be48922d9dfc6e0c6f9931ac00d59d8d1c363867d486c81",
+    "doi_reference": "10.26133/NEA12",
+    "processing_version": "exodynamics-0.1.0",
+    "output_path": "C:/Users/biswa/Documents/New project/exoplanet-dynamics-lab/data/raw/q1_q17_dr25_tce.csv"
+  },
+  {
+    "archive": "NASA Exoplanet Archive",
+    "table": "toi",
+    "query": "select tid,toi,toipfx,pl_pnum,tfopwg_disp,pl_orbper,pl_tranmid,pl_trandurh,pl_trandep,pl_rade,ra,dec,st_tmag,st_teff,st_logg,st_rad from toi",
+    "target": "population survey",
+    "retrieval_timestamp_utc": "2026-08-24T20:21:57.349531+00:00",
+    "row_count": 8136,
+    "source_url_or_identifier": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+tid%2Ctoi%2Ctoipfx%2Cpl_pnum%2Ctfopwg_disp%2Cpl_orbper%2Cpl_tranmid%2Cpl_trandurh%2Cpl_trandep%2Cpl_rade%2Cra%2Cdec%2Cst_tmag%2Cst_teff%2Cst_logg%2Cst_rad+from+toi&format=csv",
+    "dataset_version": "live TAP response; timestamped snapshot",
+    "checksum_sha256": "b591817f958fb84b35e0dd59bff788378bc49e5e09ee13d43bfd9f6e20cf6799",
+    "doi_reference": "10.26133/NEA12",
+    "processing_version": "exodynamics-0.1.0",
+    "output_path": "C:/Users/biswa/Documents/New project/exoplanet-dynamics-lab/data/raw/toi.csv"
+  }
+]

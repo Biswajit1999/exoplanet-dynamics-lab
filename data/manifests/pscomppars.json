@@ -1,0 +1,14 @@
+{
+  "archive": "NASA Exoplanet Archive",
+  "table": "pscomppars",
+  "query": "select pl_name,hostname,sy_pnum,pl_orbper,pl_orbsmax,pl_rade,pl_bmasse,pl_orbeccen,st_mass,st_rad,ra,dec,sy_dist from pscomppars",
+  "target": "population survey",
+  "retrieval_timestamp_utc": "2026-08-24T20:21:53.606677+00:00",
+  "row_count": 6354,
+  "source_url_or_identifier": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Csy_pnum%2Cpl_orbper%2Cpl_orbsmax%2Cpl_rade%2Cpl_bmasse%2Cpl_orbeccen%2Cst_mass%2Cst_rad%2Cra%2Cdec%2Csy_dist+from+pscomppars&format=csv",
+  "dataset_version": "live TAP response; timestamped snapshot",
+  "checksum_sha256": "c9795d9182a382e8f2ecc786e62962464dd681e3249643dabb7b5723e1db8efd",
+  "doi_reference": "10.26133/NEA12",
+  "processing_version": "exodynamics-0.1.0",
+  "output_path": "C:/Users/biswa/Documents/New project/exoplanet-dynamics-lab/data/raw/pscomppars.csv"
+}

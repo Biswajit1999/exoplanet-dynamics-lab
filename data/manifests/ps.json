@@ -1,0 +1,14 @@
+{
+  "archive": "NASA Exoplanet Archive",
+  "table": "ps",
+  "query": "select pl_name,hostname,default_flag,sy_pnum,discoverymethod,disc_year,disc_facility,pl_orbper,pl_orbpererr1,pl_orbpererr2,pl_orbsmax,pl_rade,pl_radeerr1,pl_radeerr2,pl_bmasse,pl_bmasseerr1,pl_bmasseerr2,pl_orbeccen,pl_orbeccenerr1,pl_orbeccenerr2,pl_orbincl,pl_tranmid,pl_tranmiderr1,pl_tranmiderr2,tran_flag,rv_flag,ttv_flag,st_mass,st_rad,st_teff,ra,dec,sy_dist,gaia_dr3_id,tic_id,hd_name,hip_name,releasedate,rowupdate from ps",
+  "target": "population survey",
+  "retrieval_timestamp_utc": "2026-08-24T20:21:46.065768+00:00",
+  "row_count": 40106,
+  "source_url_or_identifier": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Cdefault_flag%2Csy_pnum%2Cdiscoverymethod%2Cdisc_year%2Cdisc_facility%2Cpl_orbper%2Cpl_orbpererr1%2Cpl_orbpererr2%2Cpl_orbsmax%2Cpl_rade%2Cpl_radeerr1%2Cpl_radeerr2%2Cpl_bmasse%2Cpl_bmasseerr1%2Cpl_bmasseerr2%2Cpl_orbeccen%2Cpl_orbeccenerr1%2Cpl_orbeccenerr2%2Cpl_orbincl%2Cpl_tranmid%2Cpl_tranmiderr1%2Cpl_tranmiderr2%2Ctran_flag%2Crv_flag%2Cttv_flag%2Cst_mass%2Cst_rad%2Cst_teff%2Cra%2Cdec%2Csy_dist%2Cgaia_dr3_id%2Ctic_id%2Chd_name%2Chip_name%2Creleasedate%2Crowupdate+from+ps&format=csv",
+  "dataset_version": "live TAP response; timestamped snapshot",
+  "checksum_sha256": "094e4ec6f17625b33c9675ed873a08c533f6bf46e2a69cbcc5d25dda394db3e1",
+  "doi_reference": "10.26133/NEA12",
+  "processing_version": "exodynamics-0.1.0",
+  "output_path": "C:/Users/biswa/Documents/New project/exoplanet-dynamics-lab/data/raw/ps.csv"
+}
