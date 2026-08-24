@@ -6,6 +6,6 @@
   "time_step_years": 6.442409308692676e-05,
   "integrator": "whfast",
   "number_of_steps": 155221,
-  "wall_time_seconds": 0.4322918998077512,
+  "wall_time_seconds": 0.42341959988698363,
   "passed_tolerance": true
 }

@@ -26,11 +26,22 @@ type SystemRow = {
 };
 
 export type Track = { x: number[]; y: number[]; z: number[]; a: number[]; e: number[]; inc: number[] };
+export type InitialCondition = {
+  name: string;
+  mass_earth: number;
+  semimajor_axis_au: number;
+  eccentricity: number;
+  inclination_deg: number;
+  omega_deg: number;
+  ascending_node_deg: number;
+  mean_anomaly_deg: number;
+};
 export type Simulation = {
   system: string;
   stellar_mass_solar: number;
   time_years: number[];
   trajectories: Record<string, Track>;
+  initial_conditions: InitialCondition[];
   data_kind: "simulated";
   assumptions: string[];
 };
@@ -86,7 +97,7 @@ function App() {
           <div className="lab-grid">
             <div className="viewport">
               {simulation && <Suspense fallback={<div className="scene-loading">Loading orbital renderer…</div>}><OrbitalCanvas simulation={simulation} playing={playing} speed={speed} /></Suspense>}
-              <div className="scale-note">Orbital distance scaled uniformly · planet radii exaggerated</div>
+              <div className="scale-note">Initial osculating orbits · short N-body playback · planet radii exaggerated</div>
             </div>
             <aside className="controls" aria-label="Simulation controls">
               <p className="control-label">Playback</p>
@@ -96,7 +107,7 @@ function App() {
               <h3>Planet key</h3><ul className="planet-key">{simulation && Object.keys(simulation.trajectories).map((name, index) => <li key={name}><span style={{ background: colors[index % colors.length] }} />{name}</li>)}</ul>
             </aside>
           </div>
-          <p className="caption">This 10-year WHFast trajectory is a model reconstructed from NASA Exoplanet Archive default parameters. It is not a direct image and does not establish gigayear stability.</p>
+          <p className="caption">The clean curves show the initial osculating orbits; planet positions use a high-cadence short N-body playback. Numerical validation separately spans 10 years. This is a model, not a direct image or proof of gigayear stability.</p>
         </section>
 
         <section className="atlas" id="atlas">

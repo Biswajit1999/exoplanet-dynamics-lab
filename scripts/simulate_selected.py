@@ -32,12 +32,22 @@ def main() -> None:
             )
         )
     shortest_period_years = float(group["pl_orbper"].min()) / 365.25
-    trajectory, metrics = integrate_system(star_mass, planets, duration_years=10.0, samples=700, timestep_years=shortest_period_years / 100)
+    stability_trajectory, metrics = integrate_system(star_mass, planets, duration_years=10.0, samples=700, timestep_years=shortest_period_years / 100)
+    trajectory, _ = integrate_system(
+        star_mass,
+        planets,
+        duration_years=60 / 365.25,
+        samples=2400,
+        timestep_years=shortest_period_years / 100,
+    )
     trajectory["system"] = chosen
     trajectory["stellar_mass_solar"] = star_mass
+    trajectory["visualization_interval_days"] = 60
+    trajectory["validation_interval_years"] = metrics.integration_time_years
     output_dir = ROOT / "results" / "simulations"
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "selected_system.json").write_text(json.dumps(trajectory), encoding="utf-8")
+    (output_dir / "stability_trajectory.json").write_text(json.dumps(stability_trajectory), encoding="utf-8")
     metrics_row = {"system": chosen, **asdict(metrics)}
     (ROOT / "results" / "simulation_summary.json").write_text(json.dumps(metrics_row, indent=2), encoding="utf-8")
     pd.DataFrame([metrics_row]).to_parquet(ROOT / "results" / "simulation_summary.parquet", index=False)

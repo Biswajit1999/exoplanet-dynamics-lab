@@ -2,15 +2,33 @@ import { Line, OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Fragment, useRef } from "react";
 import type { Mesh } from "three";
-import type { Simulation } from "./App";
+import type { InitialCondition, Simulation } from "./App";
 
 const colors = ["#8bd3ff", "#f2c879", "#f49f7a", "#b8dd9a", "#c5acf4", "#efb9d0"];
+
+function osculatingOrbit(condition: InitialCondition, scale: number): Array<[number, number, number]> {
+  const points: Array<[number, number, number]> = [];
+  const inclination = condition.inclination_deg * Math.PI / 180;
+  const omega = condition.omega_deg * Math.PI / 180;
+  const node = condition.ascending_node_deg * Math.PI / 180;
+  for (let step = 0; step <= 180; step += 1) {
+    const anomaly = step / 180 * Math.PI * 2;
+    const radius = condition.semimajor_axis_au * (1 - condition.eccentricity ** 2)
+      / (1 + condition.eccentricity * Math.cos(anomaly));
+    const argument = omega + anomaly;
+    const x = radius * (Math.cos(node) * Math.cos(argument) - Math.sin(node) * Math.sin(argument) * Math.cos(inclination));
+    const y = radius * (Math.sin(node) * Math.cos(argument) + Math.cos(node) * Math.sin(argument) * Math.cos(inclination));
+    const z = radius * Math.sin(argument) * Math.sin(inclination);
+    points.push([x * scale, z * scale, y * scale]);
+  }
+  return points;
+}
 
 function OrbitalScene({ simulation, playing, speed }: { simulation: Simulation; playing: boolean; speed: number }) {
   const planetRefs = useRef<Array<Mesh | null>>([]);
   const frame = useRef(0);
   const names = Object.keys(simulation.trajectories);
-  const scale = 7 / Math.max(...names.map((name) => Math.max(...simulation.trajectories[name].a)));
+  const scale = 4.5 / Math.max(...names.map((name) => Math.max(...simulation.trajectories[name].a)));
   useFrame((_, delta) => {
     if (playing) frame.current = (frame.current + delta * speed * 12) % simulation.time_years.length;
     const index = Math.floor(frame.current);
@@ -23,11 +41,11 @@ function OrbitalScene({ simulation, playing, speed }: { simulation: Simulation; 
   return <>
     <mesh><sphereGeometry args={[0.26, 32, 32]} /><meshBasicMaterial color="#fff2ca" /></mesh>
     {names.map((name, index) => {
-      const track = simulation.trajectories[name];
-      const stride = Math.max(1, Math.floor(track.x.length / 260));
-      const points = track.x.filter((_, i) => i % stride === 0).map((x, i) => [x * scale, track.z[i * stride] * scale, track.y[i * stride] * scale] as [number, number, number]);
+      const condition = simulation.initial_conditions.find((item) => item.name === name);
+      if (!condition) return null;
+      const points = osculatingOrbit(condition, scale);
       return <Fragment key={name}>
-        <Line points={points} color={colors[index % colors.length]} transparent opacity={0.42} lineWidth={1} />
+        <Line points={points} color={colors[index % colors.length]} transparent opacity={0.58} lineWidth={1.25} />
         <mesh ref={(element) => { planetRefs.current[index] = element; }} aria-label={`${name} simulated position`}>
           <sphereGeometry args={[0.065 + index * 0.01, 16, 16]} />
           <meshStandardMaterial color={colors[index % colors.length]} roughness={0.7} />
