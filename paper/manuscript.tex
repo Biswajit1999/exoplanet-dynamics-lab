@@ -1,0 +1,34 @@
+\documentclass[twocolumn]{aastex631}
+\usepackage{amsmath}
+\begin{document}
+\title{EXODYNAMICS: A Reproducible Framework for Reconstructing the Dynamics and Observable Signatures of Multi-Planet Exoplanetary Systems}
+\author{Biswajit Jana}
+\begin{abstract}
+We present EXODYNAMICS, an open framework connecting timestamped public exoplanet catalogue rows to evidence-ranked system architectures, numerical integrations, and forward observable models. The first archive snapshot contains 98,192 genuine rows across five NASA Exoplanet Archive tables, yielding 6,354 default confirmed planets around 4,764 hosts and 1,058 multi-planet systems. A transparent evidence score identifies 271 Tier A and 760 Tier B systems. The highest-ranked architecture, K2-138, is integrated for 10 years with REBOUND/WHFast and satisfies the adopted conservation criteria. This release deliberately reports period-ratio proximity rather than dynamical resonance and does not claim observed light-curve or radial-velocity analyses that have not been retrieved.
+\end{abstract}
+
+\section{Public archive survey}
+The pipeline discovers TAP schemas before selecting columns and records ADQL, timestamps, row counts, source URLs, DOI, processing version and SHA-256 for every response. The survey includes the Planetary Systems, composite confirmed-planet, TESS candidate, cumulative Kepler Object of Interest and final DR25 threshold-crossing-event tables. Confirmed-planet statistics use only the default published solution from the Planetary Systems table \citep{nasa_exoplanet_archive_ps}.
+
+\section{System identity and evidence}
+Systems are grouped by exact archive canonical host identity. Text similarity alone never produces a join. The Dynamical Reconstruction Confidence is an evidence-coverage index based on period, mass, radius, eccentricity, transit epoch and inclination coverage; it is not a probability that a model is correct. Tier A supports nominal reconstruction, Tier B requires prior ensembles, Tier C supports visualization only, and Tier D is excluded.
+
+\section{N-body method}
+The numerical engine uses REBOUND \citep{rein2012rebound}. WHFast \citep{rein2015whfast} is selected for compact nearly Keplerian systems, while IAS15 \citep{rein2015ias15} is exposed for adaptive high-accuracy integrations. Stored metrics include relative energy and angular-momentum drift, integrator, timestep, duration, step count and wall time. The displayed K2-138 integration uses a timestep of one hundredth of the shortest period and spans only 10 years; its result cannot establish gigayear stability.
+
+\section{Architecture and resonance}
+Adjacent period ratios are compared with a declared set of low-order commensurabilities. The survey finds 261 adjacent pairs within two percent of one of these ratios. These are labelled near commensurabilities. A resonance claim additionally requires constrained resonant arguments and evidence of libration over an adequate integration.
+
+\section{Observables}
+The package provides unit-tested ephemeris, O--C transit timing, transit-probability and instrument-offset RV forward models. Observed time series require selective MAST or public RV acquisition and carry explicit data-kind labels. No synthetic series is labelled as observed.
+
+\section{Selection effects and limitations}
+Catalogue architecture is not the intrinsic population: transit geometry, mission baselines, RV amplitude thresholds, host brightness and follow-up decisions all alter observed multiplicity. The current release surveys one archive, uses one nominal N-body case, does not preserve parameter covariance, and does not yet publish MAST, DACE or fresh Gaia analyses. It should be treated as a reproducible foundation, not a peer-reviewed population inference.
+
+\section{Conclusions}
+EXODYNAMICS demonstrates an end-to-end, provenance-first path from nearly one hundred thousand current archive rows to a testable research application. Its strict observed-versus-simulated boundary and numerical validation make later light-curve, TTV, RV and resonance studies auditable.
+
+\bibliography{../references/references}
+\bibliographystyle{aasjournal}
+\end{document}
+

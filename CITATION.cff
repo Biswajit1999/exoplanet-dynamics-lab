@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use EXODYNAMICS, please cite this software and the underlying archive datasets."
+title: "EXODYNAMICS: Multi-Planet Systems in Motion"
+type: software
+version: 0.1.0
+date-released: 2026-08-24
+authors:
+  - family-names: Jana
+    given-names: Biswajit
+repository-code: "https://github.com/Biswajit1999/exoplanet-dynamics-lab"
+license: MIT
+keywords:
+  - exoplanets
+  - orbital dynamics
+  - n-body
+  - transit timing variations
+

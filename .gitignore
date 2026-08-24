@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+node_modules/
+web/dist/
+*.tsbuildinfo
+data/raw/*.csv
+!data/raw/.gitkeep
+*.fits
+*.log
