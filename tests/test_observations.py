@@ -2,7 +2,11 @@ import numpy as np
 import pytest
 
 from exodynamics.observations.rv import apply_instrument_offsets, circular_multi_planet_rv
-from exodynamics.observations.transit import normalize_flux, observed_minus_calculated, transit_probability
+from exodynamics.observations.transit import (
+    normalize_flux,
+    observed_minus_calculated,
+    transit_probability,
+)
 
 
 def test_flux_normalization() -> None:
@@ -25,4 +29,3 @@ def test_rv_model_and_offsets() -> None:
     model = circular_multi_planet_rv(t, np.array([1.0]), np.array([2.0]), np.array([0.0]))
     shifted = apply_instrument_offsets(model, np.array(["A", "B"]), {"A": 10, "B": -3})
     np.testing.assert_allclose(shifted, [12, -5])
-
