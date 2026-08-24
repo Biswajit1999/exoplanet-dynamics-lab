@@ -6,8 +6,8 @@ import hashlib
 import io
 import json
 import time
-import urllib.parse
 import urllib.error
+import urllib.parse
 import urllib.request
 from dataclasses import asdict, dataclass
 from datetime import UTC, datetime
