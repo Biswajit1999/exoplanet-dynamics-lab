@@ -54,7 +54,7 @@ make web
 make test
 ```
 
-Equivalent commands are available through `exodynamics data|survey|analyse`. Python 3.11+ and Node 22.12+ are required. The exact acquisition query, row count, timestamp, DOI and checksum are stored in every manifest.
+Equivalent commands are available through `exodynamics data|survey|analyse`. Python 3.12+ and Node 22.12+ are required. The exact acquisition query, row count, timestamp, DOI and checksum are stored in every manifest.
 
 ## Scientific boundaries
 
