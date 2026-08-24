@@ -67,7 +67,10 @@ def integrate_system(stellar_mass_solar: float, planets: list[PlanetInitialCondi
     initial_l_vector = simulation.angular_momentum()
     initial_angular_momentum = float(np.sqrt(initial_l_vector.x**2 + initial_l_vector.y**2 + initial_l_vector.z**2))
     times = np.linspace(0, duration_years, samples)
-    trajectories = {planet.name: {key: [] for key in ("x", "y", "z", "a", "e", "inc")} for planet in planets}
+    trajectories: dict[str, dict[str, list[float]]] = {
+        planet.name: {key: [] for key in ("x", "y", "z", "a", "e", "inc")}
+        for planet in planets
+    }
     started = perf_counter()
     for time in times:
         simulation.integrate(float(time), exact_finish_time=0)

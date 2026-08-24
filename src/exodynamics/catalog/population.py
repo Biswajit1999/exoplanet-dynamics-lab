@@ -6,7 +6,6 @@ import hashlib
 import re
 from dataclasses import dataclass
 
-import numpy as np
 import pandas as pd
 
 
@@ -116,4 +115,3 @@ class SurveySummary:
 
     def as_dict(self) -> dict[str, int]:
         return self.__dict__.copy()
-

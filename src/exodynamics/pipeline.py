@@ -91,7 +91,7 @@ def analyse_population(root: Path = ROOT) -> dict[str, object]:
 
     manifest_files = sorted((root / "data" / "manifests").glob("*.json"))
     acquisitions = [json.loads(path.read_text(encoding="utf-8")) for path in manifest_files]
-    summary = SurveySummary(
+    survey_counts = SurveySummary(
         archive_rows_surveyed=sum(int(item["row_count"]) for item in acquisitions),
         confirmed_planets=int(defaults["pl_name"].nunique()),
         host_systems=int(defaults["hostname"].nunique()),
@@ -101,6 +101,8 @@ def analyse_population(root: Path = ROOT) -> dict[str, object]:
         tier_b_systems=int((multis["tier"] == "B").sum()),
         near_commensurate_pairs=near_count,
     ).as_dict()
+    summary: dict[str, object] = {}
+    summary.update(survey_counts)
     summary["archives"] = 1
     summary["data_last_synchronised"] = max(item["retrieval_timestamp_utc"] for item in acquisitions)
     summary["method_note"] = "Counts derive from timestamped live TAP responses; archive rows include repeated literature solutions in ps."

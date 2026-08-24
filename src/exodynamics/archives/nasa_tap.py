@@ -7,9 +7,10 @@ import io
 import json
 import time
 import urllib.parse
+import urllib.error
 import urllib.request
 from dataclasses import asdict, dataclass
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pandas as pd
@@ -51,7 +52,7 @@ class NasaTapClient:
                 request = urllib.request.Request(url, headers={"User-Agent": "EXODYNAMICS/0.1"})
                 with urllib.request.urlopen(request, timeout=self.timeout) as response:
                     return response.read()
-            except Exception as exc:  # pragma: no cover - network failure path
+            except (urllib.error.URLError, TimeoutError, OSError) as exc:  # pragma: no cover
                 error = exc
                 time.sleep(2**attempt)
         raise RuntimeError(f"NASA TAP query failed after {self.retries} attempts") from error
@@ -83,7 +84,7 @@ class NasaTapClient:
             table=table,
             query=adql,
             target="population survey",
-            retrieval_timestamp_utc=datetime.now(timezone.utc).isoformat(),
+            retrieval_timestamp_utc=datetime.now(UTC).isoformat(),
             row_count=len(frame),
             source_url_or_identifier=self.url(adql),
             dataset_version="live TAP response; timestamped snapshot",
@@ -95,4 +96,3 @@ class NasaTapClient:
         manifest_destination.parent.mkdir(parents=True, exist_ok=True)
         manifest_destination.write_text(json.dumps(asdict(acquisition), indent=2), encoding="utf-8")
         return acquisition
-

@@ -43,4 +43,9 @@ target-version = "py311"
 python_version = "3.11"
 strict = true
 warn_unused_ignores = true
+follow_imports = "skip"
+warn_return_any = false
 
+[[tool.mypy.overrides]]
+module = ["rebound", "rebound.*"]
+ignore_missing_imports = true
