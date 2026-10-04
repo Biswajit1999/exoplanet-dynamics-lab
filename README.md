@@ -29,7 +29,11 @@ NASA TAP snapshots → schema validation → exact host identity → evidence ti
                    → transit / TTV / RV forward models → observation residuals
 ```
 
-The current release completes the live population foundation and a validated nominal K2-138 reconstruction. K2-138 emerged as the highest-ranked system under the transparent selection score; it was not preselected. The WHFast integration spans 10 years, uses `P_min/100`, and passes release tolerances with `ΔE/E = 2.28×10⁻⁸` and `ΔL/L = 1.17×10⁻¹⁴`. It does **not** establish long-term stability.
+The current release completes the live population foundation and a validated conditional K2-138 reconstruction. K2-138 is the deterministic first entry after ordering by reconstruction tier, parameter coverage, multiplicity and finally hostname; it is not uniquely preferred on scientific value. The nominal WHFast integration spans 10 years, uses `P_min/100`, and keeps the **maximum sampled** drift to `|ΔE/E₀| = 2.49×10⁻⁸` and `|ΔL/L₀| = 1.33×10⁻¹⁴`. A 50/100/200-step convergence test shows the expected reduction in energy error, while 32 disclosed phase-prior trials all pass the numerical tolerance. None of these results establishes long-term physical stability.
+
+![K2-138 numerical validation and phase-prior sensitivity](results/figures/dynamical_validation.png)
+
+The phase ensemble draws independent uniform mean anomalies because archive phases are unavailable. It is a sensitivity experiment, not a posterior: the largest 10-year eccentricity excursion in these 32 trials is 0.0133, and the result cannot be extrapolated to gigayear stability or used as a resonance claim. Machine-readable products are in `results/timestep_convergence.csv`, `results/phase_prior_sensitivity.csv`, and `results/sensitivity_summary.json`.
 
 ## Repository map
 
@@ -59,7 +63,7 @@ Equivalent commands are available through `exodynamics data|survey|analyse`. Pyt
 ## Scientific boundaries
 
 - A near period ratio is not called a confirmed resonance without libration evidence.
-- Missing nodes and orbital phases in the first trajectory use disclosed zero-valued project priors.
+- Missing nodes use a disclosed zero-valued project prior. The nominal trajectory also uses zero mean anomalies; a separate 32-trial uniform-phase sensitivity experiment exposes dependence on that choice.
 - Planet sizes are visually exaggerated; orbital coordinates use one linear distance scale.
 - No MAST light curve, DACE RV series, or new Gaia match is claimed in v0.1.
 - Transit/TTV/RV modules are presently validated on controlled inputs, not presented as telescope analyses.

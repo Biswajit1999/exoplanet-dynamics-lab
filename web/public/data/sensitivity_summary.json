@@ -1,0 +1,11 @@
+{
+  "system": "K2-138",
+  "phase_trials": 32,
+  "phase_seed": 20261004,
+  "phase_prior": "independent uniform mean anomaly on [0, 360 degrees); sensitivity experiment, not posterior",
+  "all_phase_trials_numerically_conserved": true,
+  "max_phase_trial_energy_drift": 1.3113244934485613e-08,
+  "max_phase_trial_angular_momentum_drift": 5.179919230737387e-14,
+  "max_eccentricity_across_phase_trials": 0.07926755981058038,
+  "max_eccentricity_excursion_across_phase_trials": 0.013260552822034498
+}
