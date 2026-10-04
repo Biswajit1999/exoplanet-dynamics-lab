@@ -1,6 +1,7 @@
 import pandas as pd
 
 from exodynamics.catalog.population import build_system_catalog, multiplicity_class
+from exodynamics.pipeline import select_reconstruction_candidates
 
 
 def test_multiplicity_classes() -> None:
@@ -21,4 +22,14 @@ def test_grouping_uses_exact_archive_hostname() -> None:
     result = build_system_catalog(frame)
     assert len(result) == 2
     assert result.iloc[0]["n_planets"] == 2
+
+
+def test_reconstruction_selection_has_explicit_tie_breakers() -> None:
+    frame = pd.DataFrame([
+        {"canonical_host": "B", "tier": "A", "dynamical_reconstruction_confidence": 100.0, "n_planets": 2},
+        {"canonical_host": "C", "tier": "B", "dynamical_reconstruction_confidence": 100.0, "n_planets": 9},
+        {"canonical_host": "A", "tier": "A", "dynamical_reconstruction_confidence": 100.0, "n_planets": 6},
+    ])
+    selected = select_reconstruction_candidates(frame)
+    assert selected["canonical_host"].tolist() == ["A", "B", "C"]
 

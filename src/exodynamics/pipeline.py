@@ -26,6 +26,23 @@ PS_COLUMNS = [
 ]
 
 
+def select_reconstruction_candidates(multis: pd.DataFrame, limit: int = 100) -> pd.DataFrame:
+    """Order by reconstruction evidence with explicit deterministic tie-breakers.
+
+    This is not a scientific-value ranking. Multiplicity breaks equal
+    evidence scores; the archive hostname is only a final stable tie-breaker.
+    """
+    tier_order = pd.Categorical(
+        multis["tier"], categories=["A", "B", "C", "D"], ordered=True
+    )
+    ranked = multis.assign(_tier_order=tier_order).sort_values(
+        ["_tier_order", "dynamical_reconstruction_confidence", "n_planets", "canonical_host"],
+        ascending=[True, False, False, True],
+        kind="stable",
+    )
+    return ranked.drop(columns="_tier_order").head(limit).reset_index(drop=True)
+
+
 def _available_columns(client: NasaTapClient, table: str, desired: list[str]) -> list[str]:
     available = set(client.table_columns(table))
     selected = [column for column in desired if column in available]
@@ -112,7 +129,7 @@ def analyse_population(root: Path = ROOT) -> dict[str, object]:
     aliases.to_parquet(results / "alias_table.parquet", index=False)
     resonance.to_parquet(results / "resonance_results.parquet", index=False)
     pd.DataFrame(columns=["archive", "target", "mission", "product", "data_kind", "status"]).to_parquet(results / "observation_inventory.parquet", index=False)
-    selection = multis.sort_values(["tier", "dynamical_reconstruction_confidence"], ascending=[True, False]).head(100)
+    selection = select_reconstruction_candidates(multis)
     selection.to_csv(results / "system_selection.csv", index=False)
     (results / "archive_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
     (results / "provenance_manifest.json").write_text(json.dumps(acquisitions, indent=2), encoding="utf-8")

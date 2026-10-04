@@ -15,6 +15,7 @@
   "figures": [
     "multiplicity.png",
     "period_ratios.png",
-    "radius_period.png"
+    "radius_period.png",
+    "dynamical_validation.png"
   ]
 }
