@@ -35,8 +35,14 @@ def test_invalid_resonance_inputs(inner: float, outer: float, j: int) -> None:
 
 
 def test_hill_draws_reproducible_and_ordered() -> None:
-    kwargs = dict(periods_days=(10, 20), planet_masses_earth=(3, 5), stellar_mass_solar=1.0,
-                  period_sigmas_days=(0.1, 0.2), mass_sigmas_earth=(0.3, 0.5), draws=1024)
+    kwargs = {
+        "periods_days": (10, 20),
+        "planet_masses_earth": (3, 5),
+        "stellar_mass_solar": 1.0,
+        "period_sigmas_days": (0.1, 0.2),
+        "mass_sigmas_earth": (0.3, 0.5),
+        "draws": 1024,
+    }
     a = hill_spacing_ensemble(**kwargs)
     b = hill_spacing_ensemble(**kwargs)
     assert a == b
