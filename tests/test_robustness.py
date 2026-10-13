@@ -1,10 +1,15 @@
 """Analytical and synthetic recovery checks for dynamical screening."""
 import math
+
 import numpy as np
 import pytest
+
 from exodynamics.dynamics.robustness import (
-    first_order_resonance_screen, hill_spacing_ensemble, weighted_rv_scan,
+    first_order_resonance_screen,
+    hill_spacing_ensemble,
+    weighted_rv_scan,
 )
+
 
 def test_resonance_exact_and_nearby() -> None:
     assert math.isinf(first_order_resonance_screen(10, 15, 3).superperiod_days)
