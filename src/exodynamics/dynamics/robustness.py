@@ -37,7 +37,7 @@ def first_order_resonance_screen(
     """
     if isinstance(j, bool) or not isinstance(j, int) or j < 2:
         raise ValueError("j must be an integer >= 2")
-    periods = np.asarray([period_inner_days, period_outer_days], dtype=float)
+    periods: np.ndarray = np.asarray([period_inner_days, period_outer_days], dtype=float)
     if not np.all(np.isfinite(periods)) or np.any(periods <= 0) or periods[1] <= periods[0]:
         raise ValueError("periods must be finite, positive and ordered inner < outer")
     offset = (periods[1] / periods[0]) * (j - 1) / j - 1
