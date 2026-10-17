@@ -2,8 +2,10 @@ import numpy as np
 import pytest
 
 from exodynamics.dynamics.uncertainty_extensions import (
-    bounded_split_normal_draws, kepler_semimajor_uncertainty,
-    pair_spacing_uncertainty, split_normal_moments,
+    bounded_split_normal_draws,
+    kepler_semimajor_uncertainty,
+    pair_spacing_uncertainty,
+    split_normal_moments,
 )
 
 

@@ -10,7 +10,11 @@ from dataclasses import asdict, dataclass
 import numpy as np
 
 from exodynamics.dynamics.diagnostics import (
-    AU_M, DAY_S, G_SI, M_EARTH_KG, M_SUN_KG,
+    AU_M,
+    DAY_S,
+    G_SI,
+    M_EARTH_KG,
+    M_SUN_KG,
 )
 
 
