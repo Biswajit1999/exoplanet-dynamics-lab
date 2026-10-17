@@ -1,0 +1,9 @@
+# Distribution-aware dynamics uncertainty checks
+
+All numerical examples are **synthetic**, not new orbital solutions, detections or empirical stability classifications.
+
+1. **Two-piece uncertainty distribution:** The existing `split_normal_draws` chooses a negative half-normal with probability `σ-/(σ-+σ+)` and positive otherwise. Its exact mean is `μ+sqrt(2/π)(σ+−σ−)`, and variance is `(σ-³+σ+³)/(σ-+σ+)−[sqrt(2/π)(σ+−σ−)]²`. These are checked against Monte Carlo. The new bounded sampler uses rejection rather than clipping, avoiding artificial probability mass at zero. This is a *truncated* distribution, not a posterior inferred from data.
+2. **Keplerian error propagation:** For `a=[G Mstar P²/(4π²)]^(1/3)`, propagate covariance between period and stellar mass using `σa²/a²=(4/9)(σP/P)²+(1/9)(σM/M)²+(4/9)cov(P,M)/(P M)`. Compare with seeded bivariate Gaussian draws. Planet mass is neglected in the Keplerian approximation. The delta method assumes small uncertainties.
+3. **Two-planet period-ratio/Hill-spacing sensitivity:** Sample positive periods, planet masses and stellar mass under *independent* Gaussian errors. Compute quantiles of `P2/P1` and mutual-Hill separation, and the probability that the ratio lies within a specified fractional distance of a selected commensurability. This is not a probability of resonance trapping, orbital stability, or a general dynamical posterior. Large uncertainties generating swapped/nonphysical orbits raise an error rather than being silently clipped.
+
+Reproduce with `PYTHONPATH=src python -m pytest tests/test_uncertainty_extensions.py -q` and `python scripts/analyze_uncertainty_extensions.py`. Results are stored under `results/uncertainty_extensions/summary.json` and use fixed seeds. These analyses are intentionally independent of live archive ingestion and do not overwrite baseline results.

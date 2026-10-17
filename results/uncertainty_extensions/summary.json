@@ -1,0 +1,31 @@
+{
+  "provenance": "fixed-seed synthetic numerical validation; not a measured planetary system",
+  "assumptions": "independent Gaussian errors for pair, local Gaussian delta method for Kepler",
+  "split_normal": {
+    "analytic_mean": 0.17978845608028654,
+    "analytic_variance": 0.06363380227632418,
+    "clipped_boundary_fraction": 0.3066,
+    "truncated_boundary_fraction": 0.0
+  },
+  "kepler": {
+    "nominal_semimajor_au": 1.0000084401155624,
+    "delta_sigma_au": 0.006705612439122733,
+    "mc_mean_au": 0.9999590640686189,
+    "mc_sigma_au": 0.00665813667515805,
+    "mc_p05_au": 0.9889560715517621,
+    "mc_p95_au": 1.0108317394791566,
+    "n_draws": 40000
+  },
+  "pair": {
+    "period_ratio_median": 1.5018930310395027,
+    "period_ratio_p05": 1.4880268236979557,
+    "period_ratio_p95": 1.515766829515053,
+    "hill_separation_median": 13.471513634742557,
+    "hill_separation_p05": 12.865738507819009,
+    "hill_separation_p95": 14.155764590994242,
+    "near_commensurability_probability": 0.9995666666666667,
+    "commensurability_numerator": 3,
+    "commensurability_denominator": 2,
+    "trials": 30000
+  }
+}
