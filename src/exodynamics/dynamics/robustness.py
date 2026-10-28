@@ -49,8 +49,8 @@ def circular_angle_diagnostics(angle_rad: np.ndarray) -> dict[str, float]:
 
 
 def hill_spacing_from_periods(period_inner_days: float, period_outer_days: float,
-                              mass_inner_earth: np.ndarray, mass_outer_earth: np.ndarray,
-                              stellar_mass_solar: np.ndarray) -> np.ndarray:
+                              mass_inner_earth: np.ndarray | float, mass_outer_earth: np.ndarray | float,
+                              stellar_mass_solar: np.ndarray | float) -> np.ndarray:
     """Circular-coplanar two-planet mutual Hill spacing, Keplerian massless a.
 
     This uses a_out/a_in=(P_out/P_in)^(2/3); no absolute a is needed.
@@ -156,7 +156,7 @@ def fit_linear_ephemeris(epochs: np.ndarray, times_days: np.ndarray,
 def synthetic_ephemeris_sensitivity(*, seed: int = 20261028) -> dict[str, object]:
     """Correlated timing errors, TTV-like sine, LOO influence and curvature check."""
     rng = np.random.default_rng(seed)
-    epochs = np.arange(45, dtype=float)
+    epochs: np.ndarray = np.arange(45, dtype=float)
     t0, period = 2457000.0, 5.0
     sigma_days, rho = 0.0007, 0.65
     cov = sigma_days**2 * rho ** abs(epochs[:, None] - epochs[None, :])
