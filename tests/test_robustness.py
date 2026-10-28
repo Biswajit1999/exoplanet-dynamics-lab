@@ -2,9 +2,14 @@ import numpy as np
 import pytest
 
 from exodynamics.dynamics.robustness import (
-    HILL_THRESHOLD, circular_angle_diagnostics, first_order_resonant_angles,
-    fit_linear_ephemeris, hill_logmass_sensitivity, hill_spacing_from_periods,
-    synthetic_ephemeris_sensitivity, synthetic_resonance_sampling,
+    HILL_THRESHOLD,
+    circular_angle_diagnostics,
+    first_order_resonant_angles,
+    fit_linear_ephemeris,
+    hill_logmass_sensitivity,
+    hill_spacing_from_periods,
+    synthetic_ephemeris_sensitivity,
+    synthetic_resonance_sampling,
 )
 
 
