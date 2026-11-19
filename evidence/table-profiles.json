@@ -1,0 +1,421 @@
+{
+  "schema": 1,
+  "project": "EXODYNAMICS — Multi-Planet Systems in Motion",
+  "tables": [
+    {
+      "path": "web/public/data/phase_prior_sensitivity.csv",
+      "label": "Phase prior sensitivity",
+      "role": "Data and provenance",
+      "rows": 32,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "trial",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 0.0,
+          "maximum": 31.0
+        },
+        {
+          "name": "seed",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 20261004.0,
+          "maximum": 20261004.0
+        },
+        {
+          "name": "mean_anomalies_deg",
+          "blank": 0,
+          "text": 32,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "max_eccentricity",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 0.07700599358740484,
+          "maximum": 0.07926755981058038
+        },
+        {
+          "name": "max_eccentricity_excursion",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 0.005604896883464668,
+          "maximum": 0.013260552822034498
+        },
+        {
+          "name": "delta_E_over_E",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 4.062668874331423e-09,
+          "maximum": 1.3113244934485613e-08
+        },
+        {
+          "name": "delta_L_over_L",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 9.323854615327298e-15,
+          "maximum": 5.179919230737387e-14
+        },
+        {
+          "name": "final_delta_E_over_E",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 1.129878608483391e-10,
+          "maximum": 7.031956475797888e-09
+        },
+        {
+          "name": "final_delta_L_over_L",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 1.0359838461474775e-15,
+          "maximum": 5.002321999969248e-14
+        },
+        {
+          "name": "integration_time_years",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 10.000036577057406,
+          "maximum": 10.000036577057406
+        },
+        {
+          "name": "time_step_years",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 6.442409308692676e-05,
+          "maximum": 6.442409308692676e-05
+        },
+        {
+          "name": "integrator",
+          "blank": 0,
+          "text": 32,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "number_of_steps",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 155222.0,
+          "maximum": 155222.0
+        },
+        {
+          "name": "sample_time_max_error_years",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 6.376621423598294e-05,
+          "maximum": 6.376621423598294e-05
+        },
+        {
+          "name": "wall_time_seconds",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 0.3719746999850031,
+          "maximum": 0.38551619998179376
+        },
+        {
+          "name": "passed_tolerance",
+          "blank": 0,
+          "text": 32,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "results/phase_prior_sensitivity.csv",
+      "label": "Phase prior sensitivity",
+      "role": "Tables and numerical results",
+      "rows": 32,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "trial",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 0.0,
+          "maximum": 31.0
+        },
+        {
+          "name": "seed",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 20261004.0,
+          "maximum": 20261004.0
+        },
+        {
+          "name": "mean_anomalies_deg",
+          "blank": 0,
+          "text": 32,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "max_eccentricity",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 0.07700599358740484,
+          "maximum": 0.07926755981058038
+        },
+        {
+          "name": "max_eccentricity_excursion",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 0.005604896883464668,
+          "maximum": 0.013260552822034498
+        },
+        {
+          "name": "delta_E_over_E",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 4.062668874331423e-09,
+          "maximum": 1.3113244934485613e-08
+        },
+        {
+          "name": "delta_L_over_L",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 9.323854615327298e-15,
+          "maximum": 5.179919230737387e-14
+        },
+        {
+          "name": "final_delta_E_over_E",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 1.129878608483391e-10,
+          "maximum": 7.031956475797888e-09
+        },
+        {
+          "name": "final_delta_L_over_L",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 1.0359838461474775e-15,
+          "maximum": 5.002321999969248e-14
+        },
+        {
+          "name": "integration_time_years",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 10.000036577057406,
+          "maximum": 10.000036577057406
+        },
+        {
+          "name": "time_step_years",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 6.442409308692676e-05,
+          "maximum": 6.442409308692676e-05
+        },
+        {
+          "name": "integrator",
+          "blank": 0,
+          "text": 32,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "number_of_steps",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 155222.0,
+          "maximum": 155222.0
+        },
+        {
+          "name": "sample_time_max_error_years",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 6.376621423598294e-05,
+          "maximum": 6.376621423598294e-05
+        },
+        {
+          "name": "wall_time_seconds",
+          "blank": 0,
+          "text": 0,
+          "finite": 32,
+          "nonfinite": 0,
+          "minimum": 0.3719746999850031,
+          "maximum": 0.38551619998179376
+        },
+        {
+          "name": "passed_tolerance",
+          "blank": 0,
+          "text": 32,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "results/system_selection.csv",
+      "label": "System selection",
+      "role": "Tables and numerical results",
+      "rows": 100,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "canonical_system_id",
+          "blank": 0,
+          "text": 100,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "canonical_host",
+          "blank": 0,
+          "text": 100,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "n_planets",
+          "blank": 0,
+          "text": 0,
+          "finite": 100,
+          "nonfinite": 0,
+          "minimum": 2.0,
+          "maximum": 6.0
+        },
+        {
+          "name": "multiplicity_class",
+          "blank": 0,
+          "text": 100,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "has_periods",
+          "blank": 0,
+          "text": 100,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "has_masses",
+          "blank": 0,
+          "text": 100,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "has_radii",
+          "blank": 0,
+          "text": 100,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "has_eccentricity_constraints",
+          "blank": 0,
+          "text": 100,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "has_transit_epochs",
+          "blank": 0,
+          "text": 100,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "has_inclinations",
+          "blank": 0,
+          "text": 100,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "is_transiting",
+          "blank": 0,
+          "text": 100,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "is_rv_detected",
+          "blank": 0,
+          "text": 100,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "data_completeness",
+          "blank": 0,
+          "text": 0,
+          "finite": 100,
+          "nonfinite": 0,
+          "minimum": 0.8889,
+          "maximum": 1.0
+        },
+        {
+          "name": "dynamical_reconstruction_confidence",
+          "blank": 0,
+          "text": 0,
+          "finite": 100,
+          "nonfinite": 0,
+          "minimum": 96.1,
+          "maximum": 100.0
+        },
+        {
+          "name": "tier",
+          "blank": 0,
+          "text": 100,
+          "finite": 0,
+          "nonfinite": 0
+        }
+      ]
+    }
+  ],
+  "excluded": []
+}
