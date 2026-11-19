@@ -4,6 +4,12 @@
 
 EXODYNAMICS is an open computational astrophysics platform that begins with a population survey, identifies genuine multi-planet systems, ranks their reconstruction evidence, and evolves archive-selected architectures with REBOUND. Observed, processed, simulated and model-predicted quantities are never conflated.
 
+## Research evidence and downloads
+
+[Open the evidence browser file](evidence.html) for 17 selected files, including [`sensitivity_summary.json`](results/sensitivity_summary.json). Each file has a download link and SHA-256 digest. Serve this checkout with `python -m http.server` to view the static browser.
+
+Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
+
 ## Archive snapshot
 
 <!-- BEGIN GENERATED STATS -->
