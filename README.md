@@ -6,6 +6,13 @@ EXODYNAMICS is an open computational astrophysics platform that begins with a po
 
 ## Research evidence and downloads
 
+
+- [Download the machine-readable table profiles](evidence/table-profiles.json) for 3 archived tables. Open `table-evidence.html` from the checkout for the coverage chart.
+- Start with [Sensitivity summary](results/sensitivity_summary.json), [Archive summary](results/archive_summary.json), [Simulation summary](results/simulation_summary.json).
+- [View Dynamical validation](results/figures/dynamical_validation.png).
+
+To rebuild the table profiles after rebuilding the evidence inventory, run `python scripts/profile_evidence_tables.py` followed by `python scripts/render_table_profiles.py`.
+
 [Open the evidence browser file](evidence.html) for 17 selected files, including [`sensitivity_summary.json`](results/sensitivity_summary.json). Each file has a download link and SHA-256 digest. Serve this checkout with `python -m http.server` to view the static browser.
 
 Rebuild the inventory and browser with `python scripts/evidence_catalog.py` and `python scripts/render_evidence_page.py`.
