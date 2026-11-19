@@ -1,0 +1,91 @@
+{
+  "project": "EXODYNAMICS — Multi-Planet Systems in Motion",
+  "repository": "https://github.com/Biswajit1999/exoplanet-dynamics-lab",
+  "files": [
+    {
+      "label": "Project data sources",
+      "path": "docs/DATA_SOURCES.md",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Project methods",
+      "path": "docs/METHODS.md",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Sensitivity summary",
+      "path": "web/public/data/sensitivity_summary.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Archive summary",
+      "path": "web/public/data/archive_summary.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Phase prior sensitivity",
+      "path": "web/public/data/phase_prior_sensitivity.csv",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Cumulative",
+      "path": "data/manifests/cumulative.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Ps",
+      "path": "data/manifests/ps.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Sensitivity summary",
+      "path": "results/sensitivity_summary.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Archive summary",
+      "path": "results/archive_summary.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Simulation summary",
+      "path": "results/simulation_summary.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Phase prior sensitivity",
+      "path": "results/phase_prior_sensitivity.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Provenance manifest",
+      "path": "results/provenance_manifest.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "System selection",
+      "path": "results/system_selection.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Dynamical validation",
+      "path": "results/figures/dynamical_validation.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Multiplicity",
+      "path": "results/figures/multiplicity.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Period ratios",
+      "path": "results/figures/period_ratios.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Radius period",
+      "path": "results/figures/radius_period.png",
+      "role": "Figures"
+    }
+  ]
+}
